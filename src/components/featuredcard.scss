@@ -1,0 +1,43 @@
+@import "./Variables.scss";
+
+.featuredCard {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(2, 50%);
+    margin-top: 5vh;
+    
+    &__image {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+    &__text {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: white;
+    }
+
+}
+
+
+
+
+.featuredcard__headline {
+    background-image: linear-gradient( 90deg, #EE0979, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+    
+
+}
+
+
+
+
+
+
+
+
+

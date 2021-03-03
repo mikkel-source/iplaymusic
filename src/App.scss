@@ -1,0 +1,9 @@
+@import "./components/Variables.scss";
+.iplay__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $BrandColor;
+    padding: 5% 5%;
+    position: relative;
+
+}

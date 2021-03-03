@@ -1,0 +1,28 @@
+@import "./Variables.scss";
+.album__drawer {
+    border: 2px solid black;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    justify-content: space-between;
+    width: 100%;
+    background: black;
+    align-items: flex-end;
+
+
+
+}
+.album__drawer--fire {
+    color: #ffffff;
+
+}
+.icon-music, .icon-spotify-circled, .icon-adjust, .icon-albums {
+    color: #EE0979;
+
+
+}
+.icon-spotify-circled  {
+    font-size: 25px;
+
+}

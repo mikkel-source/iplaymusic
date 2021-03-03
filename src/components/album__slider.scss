@@ -1,0 +1,184 @@
+@import "./Variables.scss";
+
+* {
+    margin: 0;
+}
+
+.album_titleall {
+    color: #EE0979;
+    text-transform: capitalize;
+    margin-top: 5vh;
+    background-color: $BrandColor;
+    background-image: linear-gradient( 90deg, #EE0979, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
+    display: inline-block;
+
+
+}
+.featureview {
+    display: flex;
+    justify-content: space-between;
+    background-color: $BrandColor;
+    color: #FFFFFF;
+    margin-top: 5vh;
+
+
+}
+.featureview__text {
+    color: #FF1168;
+
+}
+.featureview__albumtext {
+    text-transform: capitalize;
+
+}
+.album__slider {
+    background-color: $BrandColor;
+    display: grid;
+    grid-template-columns:  repeat(10, 130px);
+    height: 1ovh;
+    overflow-x: scroll;
+    grid-gap: 0px;
+    &one, &two, &tree, &four, &five, &six, &seven {
+        width: 90%;
+        height: 15vh;
+        border-radius: .5em;
+
+     }
+    }
+     
+    
+    .album__songs {
+        display: grid;
+        grid-template-columns: 70vw 30vw;
+        grid-template-rows: repeat(5, 50px);
+        grid-row-gap: 5vh;
+        margin: 10px;
+        margin-bottom: 10%;
+        &view {
+            color: orange;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            margin-top: 20px;
+            }
+            &--one {
+                width: 20vw;
+                height: 10vh;
+                grid-column: 1/2;
+                grid-row: 2/3;
+}
+            &--newreleases {
+                color: #FFFFFF;
+                text-transform: capitalize;
+                margin-top: 20px
+            ;
+            }
+            }
+            .album__songone--title {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                margin-left: 23vw;
+                font-size: 15px;
+                color: #FFFFFF;
+                line-height: 1em;
+                text-transform: capitalize;
+                font-weight: bold;
+
+
+           }
+           .album__songone--artist {
+               grid-column: 1/2;
+               grid-row: 2/3;
+               margin-left: 23vw;
+               margin-top: 3vh;
+               font-size: 12px;
+               color: #FFFFFF;
+               text-transform: capitalize;
+           }
+           .album__songs--two {
+               grid-column: 1/2;
+               grid-row: 3/4;
+               width: 20vw;
+               height: 10vh;   
+
+               } 
+               .album__songtwo--title {
+                   grid-column: 1/2;
+                   grid-row: 3/4;
+                   margin-left: 23vw;
+                   font-size: 15px;
+                   color: #FFFFFF;
+                   line-height: 1em;
+                   text-transform: capitalize;
+                   font-weight: bold;
+   
+   
+               }
+               .album__songtwo--artist {
+                margin-left: 23vw;
+                margin-top: 3vh;
+                font-size: 12px;
+                color: #FFFFFF;
+                text-transform: capitalize;
+                grid-column: 1/2;
+                grid-row: 3/4;
+
+               }
+               .album__songs--tree {
+                   @extend .album__songs--two;
+                   grid-column: 1/2;
+                   grid-row: 4/5;
+                   
+
+               }
+               .album__songtree--title {
+                   @extend .album__songtwo--title;
+                   @extend .album__songs--tree;
+                   width: 101px;
+                   font-weight: bold
+
+               }
+               .album__songtree--artist {
+                   @extend .album__songtwo--title;
+                   @extend .album__songs--tree;
+                   margin-left: 23vw;
+                   margin-top: 3vh;
+                   font-size: 12px;
+                   color: #FFFFFF;
+                   text-transform: capitalize;
+                   white-space: nowrap
+                   
+
+
+               }
+               .album__song--four {
+                @extend .album__songs--two;
+                grid-column: 1/2;
+                grid-row: 5/6;
+
+               }
+               .album__songfour--title {
+                @extend .album__songtwo--title;
+                @extend .album__song--four;
+                line-height: 2em;
+                width: 144px;
+                font-weight: bold
+
+               }
+               .album__songfour--artist {
+                   @extend .album__song--four;
+                   @extend .album__songfour--title;
+                   margin-left: 23vw;
+                   margin-top: 4vh;
+                   font-size: 12px;
+                   color: #FFFFFF;
+                   text-transform: capitalize; 
+               }
+        
+           
+
+
+
+
