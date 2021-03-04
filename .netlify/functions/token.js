@@ -18,7 +18,7 @@ exports.handler = async function(event, contexvt) {
         method:  "post",
         params: {
             code: body.code,
-            redirect_uri: process.env.redirect_URI,
+            redirect_uri: process.env.REDIRECT_URI,
             grant_type: "authorization_code"
         },
          headers: {
