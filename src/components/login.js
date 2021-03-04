@@ -4,7 +4,7 @@ export default function Login() {
         response_type: "code",
         client_id: "56c706079dea4417a444cd1091bd004a",
         scope: "user-read-private user-read-email",
-        redirect_uri: "http://localhost:8888/callback",
+        redirect_uri: process.env.NODE_ENV === "production" ? "https://iplaymusic-mikkel63.netlify.app/callback" : "http://localhost:8888/callback",
         state: "srrwtwr"
 
 
