@@ -1,11 +1,11 @@
-import { useCallback, useEffect } from "react"
+import { useEffect } from "react"
 
 import axios from "axios"
 import TokenContext from "../pages/tokenContext"
 import { useContext } from "react" 
 import { navigate} from "@reach/router"
 export default function Callback(props) {
-    var[token, setToken] = useContext(TokenContext)
+    var setToken = useContext(TokenContext)[1]
 
     var code = new URLSearchParams(props.location.search).get("code");
     useEffect(function() {
